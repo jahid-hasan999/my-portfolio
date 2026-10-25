@@ -4,6 +4,7 @@ import ProjectPage from './component/Project';
 import HeroSection from './component/HeroSection';
 import AboutSection from './component/AboutSection';
 import Skill from './component/Skill';
+import Navbar from './component/Navbar';
 
 
 export default function Home() {
@@ -12,16 +13,7 @@ export default function Home() {
     <div className="bg-slate-950">
       <main className="container mx-auto  bg-slate-950 text-white">
         {/* Navbar */}
-        <nav className="flex items-center justify-between px-8 py-6">
-          <h1 className="text-2xl font-bold text-blue-400">Jahid.dev</h1>
-
-          <div className="flex gap-6 text-sm">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-          </div>
-        </nav>
+      <Navbar/>
 
         {/* Hero Section */}
         <HeroSection />
